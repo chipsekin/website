@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header a{
+    color: black;
+    text-decoration: none;
+    margin: 0 30px;
+    font-family: arial;
+}
+
+header{
+    background-color: rgb(10, 40, 141);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header button{
+    background-color: blue;
+    
+    color:cornsilk;
+    border: none;
+    border-radius: 50%;
+    transition: all .4s;
+}
+
+header button:hover{
+    background-color: red;
+    transform: scale(1.1)
+}
+
+footer{
+    background-color: rgb(145, 135, 135);
+}
+
+.hero{
+    min-height: 75vh;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.596) , rgba(0, 0, 0, 0.246)) , url(images/foto-m5-f90_01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: column;
+    align-items: center;
+    text-align: center;
+    
+}
+.hero p{
+    min-width: 700px;
+}
