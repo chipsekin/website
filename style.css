@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+h1, h2, figcaption{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
 header a{
     color: black;
     text-decoration: none;
@@ -33,19 +37,85 @@ header button:hover{
 
 footer{
     background-color: rgb(145, 135, 135);
+    padding: 20px;
 }
 
 .hero{
     min-height: 75vh;
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.596) , rgba(0, 0, 0, 0.246)) , url(images/foto-m5-f90_01.jpg);
     background-repeat: no-repeat;
+   background-size: cover;
     background-position: center;
     display: flex;
-    justify-content: column;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     text-align: center;
     
 }
-.hero p{
-    min-width: 700px;
+
+.hero h1{
+    margin-bottom: 10px;
 }
+
+.hero p{
+    max-width: 500px;
+}
+
+@media(max-width:800px){
+    header{
+        display: block;
+        text-align: center;
+    }
+
+   
+
+    nav{
+        margin: 25px 0;
+        display: block;
+    }
+}
+
+@media(max-width:411px){
+    .pets_wrapper{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    figure{
+        width: 70%;
+    }
+
+    hero p{
+        font-size: 18px;
+    }
+
+
+}
+
+img{
+    max-width: 100%;
+}
+
+.pets_wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+figcaption{
+    font-family: arial;
+    color:blueviolet;
+    text-align: center;
+    
+
+}
+figure{
+    width: 22%;
+    border: brown 2px dashed;
+    padding: 20px 10px;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+
+/* @media(max-width:) */
